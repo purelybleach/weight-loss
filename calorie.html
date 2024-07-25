@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热量消耗计算</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .navbar a:hover {
+            color: #007bff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 50px); /* Adjust height to account for the navbar */
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .formula {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .additional-info-container {
+            display: flex;
+            justify-content: center; /* Center the container */
+            width: 100%; /* Full width of the parent container */
+            padding: 20px 0; /* Add some padding for better readability */
+        }
+        .additional-info {
+            max-width: 600px; /* Limit the width of the content */
+            text-align: left; /* Left-align the text within the container */
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .additional-info p {
+            margin: 0;
+            padding: 5px 0; /* Add some padding for better readability */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">首页</a>
+        <a href="calorie.html">热量消耗</a>
+        <a href="food-calories.html">食物热量</a>
+        <a href="exercise.html">运动</a>
+        <a href="weight-loss-calendar.html">减肥日历</a>
+    </div>
+    <div class="container">
+        <h1>热量消耗计算公式</h1>
+        <div class="formula">
+            <p><strong>男性：</strong></p>
+            <p>BMR = 10 × 体重 (kg) + 6.25 × 身高 (cm) - 5 × 年龄 (years) + 5</p>
+            <p><strong>女性：</strong></p>
+            <p>BMR = 10 × 体重 (kg) + 6.25 × 身高 (cm) - 5 × 年龄 (years) - 161</p>
+            <p>其中 BMR（基础代谢率）可以用来估算每日所需的卡路里总量，具体还需结合活动水平调整。</p>
+        </div>
+        <div class="additional-info-container">
+            <div class="additional-info">
+                <p>在计算总日常能量消耗（TDEE）时，我们需要考虑日常活动水平来调整BMR。这个数字是一个活动因子，用于反映不同活动水平对能量需求的影响。常见的活动因子包括：</p>
+                <p>久坐不动（极少或没有运动）：BMR × 1.2</p>
+                <p>轻度活动（轻度运动或轻度体力劳动）：BMR × 1.375</p>
+                <p>中度活动（中等强度运动或体力劳动）：BMR × 1.55</p>
+                <p>高度活动（高强度运动或繁重体力劳动）：BMR × 1.725</p>
+                <p>极度活动（非常高强度运动或非常重的体力劳动）：BMR × 1.9</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
